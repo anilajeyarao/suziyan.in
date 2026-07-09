@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suziyan.in/sitemap.xml
