@@ -28,11 +28,11 @@ if (requirementForm) {
     const email = document.querySelector("#req-email")?.value.trim() || "";
     const details = document.querySelector("#req-details")?.value.trim() || "";
 
-    const subject = "Talent Requirement for Suziyan";
+    const subject = "AI, Software or Talent Enquiry for Suziyan";
     const bodyLines = [
       "Hello Suziyan,",
       "",
-      "Please find our hiring requirement below.",
+      "Please find our project or talent requirement below.",
       "",
       `Name: ${name || "-"}`,
       `Company: ${company || "-"}`,
@@ -57,7 +57,7 @@ if (requirementForm) {
       // Ignore and fall back to the helper message below.
     }
 
-    const fallbackMessage = "If your mail app did not open, please send this requirement manually to contact@suziyan.in. The requirement text has been prepared below.";
+    const fallbackMessage = "Your enquiry has not been sent by this website. Review and send the draft in your email app. If no app opened, email your details to contact@suziyan.in.";
 
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(emailBody).then(() => {
